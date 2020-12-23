@@ -5,6 +5,8 @@
     "forceConsistentCasingInFileNames": true,
     "outDir": "dist",
     "declaration": true,
-    "pretty": true
+    "pretty": true,
+    "esModuleInterop": true,
+    "skipDefaultLibCheck": true
   }
 }

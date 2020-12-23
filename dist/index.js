@@ -4,7 +4,7 @@
  * description: boilerplate-typescript-package-description
  * homepage:
  * version: 1.0.0
- * date: 2020-12-23 17:44:26
+ * date: 2020-12-23 18:31:02
  * license: MIT
  */
 exports.__esModule = true;
