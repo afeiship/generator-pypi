@@ -1,5 +1,5 @@
 # boilerplate-typescript-package
-> boilerplate-typescript-package-description.
+> boilerplate-typescript-package-description
 
 [![version][version-image]][version-url]
 [![license][license-image]][license-url]
@@ -9,6 +9,13 @@
 ## installation
 ```shell
 npm install @boilerplate-scope/boilerplate-typescript-package
+```
+
+## usage
+```js
+import boilerplateTypescriptPackage from '@boilerplate-scope/boilerplate-typescript-package';
+
+// usage goes here.
 ```
 
 ## license
