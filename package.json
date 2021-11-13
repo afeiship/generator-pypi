@@ -37,5 +37,11 @@
   "publishConfig": {
     "access": "<%= registry.access %>",
     "registry": "<%= registry.publish %>"
+  },
+  "boilerplate": "@boilerplate-scope/boilerplate-typescript-package",
+  "homepage": "https://js.work",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/afeiship/@boilerplate-scope/boilerplate-typescript-package"
   }
 }
