@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "<%= project_name %>"
+version = "1.0.0"
+description = "<%= description %>"
+authors = ["<%= username %> <<%= email %>>"]
+readme = "README.md"
+repository = "https://github.com/aric-pypi/<%= project_name %>"
+homepage = "https://js.work"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+psutil = "^5.9.0"
+"ruamel.yaml" = "^0.17.21"
+bs4 = "^0.0.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

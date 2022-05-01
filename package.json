@@ -1,48 +1,31 @@
 {
-  "name": "@boilerplate-scope/boilerplate-typescript-package",
+  "name": "@jswork/generator-pypi",
   "version": "1.0.0",
-  "description": "boilerplate-typescript-package-description",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "typings": "dist/esm/index.d.ts",
-  "scripts": {
-    "build": "gulp",
-    "test": "jest",
-    "release": "release-it"
+  "description": "Yeoman generator for python pypi package.",
+  "keywords": [
+    "yeoman",
+    "yo",
+    "yeoman-generator"
+  ],
+  "engines": {
+    "npm": ">= 4.0.0"
   },
-  "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.14.3",
-    "@babel/preset-env": "^7.14.2",
-    "@babel/preset-typescript": "^7.13.0",
-    "@jswork/gulp-pkg-header": "^1.0.4",
-    "@types/jest": "^26.0.23",
-    "babel-jest": "^27.0.1",
-    "del": "^5.1.0",
-    "gulp": "^4.0.2",
-    "gulp-header": "^2.0.9",
-    "gulp-ignore": "^3.0.0",
-    "gulp-load-plugins": "^2.0.1",
-    "gulp-rename": "^1.4.0",
-    "gulp-replace": "^1.1.3",
-    "gulp-size": "^3.0.0",
-    "gulp-tsc": "^1.3.2",
-    "gulp-typescript": "^6.0.0-alpha.1",
-    "gulp-uglify": "^3.0.2",
-    "jest": "^26.6.3",
-    "prettier": "^2.2.1",
-    "release-it": "^14.2.1",
-    "typedoc": "^0.21.9",
-    "typescript": "^4.1.3"
+    "jest": "^28.0.3",
+    "prettier": "^2.6.2",
+    "yeoman-assert": "^3.1.1",
+    "yeoman-environment": "^3.9.1",
+    "yeoman-test": "^6.3.0"
   },
-  "publishConfig": {
-    "access": "<%= registry.access %>",
-    "registry": "<%= registry.publish %>"
+  "dependencies": {
+    "@jswork/generator-prompts": "^1.1.6",
+    "@jswork/yeoman-generator-helper": "^1.0.6",
+    "yeoman-generator": "^5.6.1",
+    "yosay": "^2.0.2"
   },
-  "boilerplate": "boilerplate-typescript-package",
-  "homepage": "https://js.work",
   "repository": {
     "type": "git",
-    "url": "https://github.com/afeiship/boilerplate-typescript-package.git"
-  }
+    "url": "https://github.com/afeiship/generator-pypi.git"
+  },
+  "license": "MIT"
 }

@@ -1,0 +1,25 @@
+{
+  "name": "@<%= scope %>/<%= project_name %>",
+  "private": true,
+  "description": "<%= description %>",
+  "scripts": {
+    "test": "poetry run pytest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aric-pypi/<%= project_name %>.git"
+  },
+  "keywords": [
+    "jswork",
+    "nx",
+    "next",
+    "toolkit",
+    "python"
+  ],
+  "author": "afeiship",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aric-pypi/<%= project_name %>/issues"
+  },
+  "homepage": "https://github.com/aric-pypi/<%= project_name %>#readme"
+}
