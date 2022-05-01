@@ -28,10 +28,15 @@ module.exports = class extends Generator {
   }
 
   writing() {
+    const { project_name } = this.props;
+    const ctx = yoHelper.ctx;
+    // rename
+    yoHelper.rename(this, "jsw_nx", ctx.underscored(project_name));
+
     this.fs.copyTpl(
       globby.sync(this.templatePath("**"), { dot: true }),
       this.destinationPath(),
-      { ...this.props, ctx: yoHelper.ctx }
+      { ...this.props, ctx }
     );
   }
 };
