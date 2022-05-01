@@ -15,13 +15,8 @@ const prompts = genp([
 
 module.exports = class extends Generator {
   async prompting() {
-    // Have Yeoman greet the user.
     this.log(
-      yosay(
-        `Welcome to the stunning $
-          "generator-generator-pypi"
-         generator!`
-      )
+      yosay(`Welcome to the stunning $ "generator-generator-pypi" generator!`)
     );
 
     this.props = await this.prompt(prompts);
