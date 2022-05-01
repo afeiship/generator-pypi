@@ -30,13 +30,17 @@ module.exports = class extends Generator {
   writing() {
     const { project_name } = this.props;
     const ctx = yoHelper.ctx;
-    // rename
-    yoHelper.rename(this, "jsw_nx", ctx.underscored(project_name));
-
+    const opts = { ...this.props, ctx };
     this.fs.copyTpl(
       globby.sync(this.templatePath("**"), { dot: true }),
       this.destinationPath(),
-      { ...this.props, ctx }
+      opts,
+      null,
+      {
+        processDestinationPath: (filePath) => {
+          return filePath.replace("jsw_nx", ctx.underscored(project_name));
+        },
+      }
     );
   }
 };
