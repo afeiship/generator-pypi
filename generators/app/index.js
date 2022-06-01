@@ -4,14 +4,7 @@ const yosay = require("yosay");
 const globby = require("globby");
 const yoHelper = require("@jswork/yeoman-generator-helper");
 const genp = require("@jswork/generator-prompts");
-const prompts = genp([
-  "author",
-  "email",
-  "scope",
-  "registry",
-  "project_name",
-  "description",
-]);
+const prompts = genp(["author", "email", "project_name", "description"]);
 
 module.exports = class extends Generator {
   async prompting() {
