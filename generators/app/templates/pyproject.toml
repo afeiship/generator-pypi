@@ -8,7 +8,7 @@ repository = "https://github.com/aric-pypi/<%= project_name %>"
 homepage = "https://js.work"
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.8"
 psutil = "^5.9.0"
 "ruamel.yaml" = "^0.17.21"
 bs4 = "^0.0.1"
