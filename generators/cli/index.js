@@ -1,5 +1,5 @@
 "use strict";
-const Generator = require("yeoman-generator");
+const Generator = require("@jswork/yeoman-generator");
 const yosay = require("yosay");
 const globby = require("globby");
 const yoHelper = require("@jswork/yeoman-generator-helper");
@@ -11,7 +11,6 @@ module.exports = class extends Generator {
     this.log(
       yosay(`Welcome to the stunning $ "generator-cli" generator!`)
     );
-
     this.props = await this.prompt(prompts);
   }
 

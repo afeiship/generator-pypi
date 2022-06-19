@@ -8,7 +8,7 @@
     "email": "1290657123@qq.com"
   },
   "scripts": {
-    "start": "python jsw_nx/main.py"
+    "start": "python <%- ctx.underscored(project_name) %>/main.py"
   },
   "license": "MIT",
   "repository": {

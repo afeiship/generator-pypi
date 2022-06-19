@@ -6,7 +6,7 @@ authors = ["<%= author %> <<%= email %>>"]
 license = "MIT"
 
 [tool.poetry.scripts]
-<%= project_name %> = "jsw_nx.main:cli"
+<%= project_name %> = "<%- ctx.underscored(project_name) %>.main:cli"
 
 [tool.poetry.dependencies]
 python = "^3.8"
